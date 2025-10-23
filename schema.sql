@@ -50,9 +50,6 @@ CREATE TABLE invoice_line (
   invoice_line_id SERIAL PRIMARY KEY,
   invoice_id    INT NOT NULL REFERENCES invoice(invoice_id) ON DELETE CASCADE,
   product_id    INT NOT NULL REFERENCES product(product_id),
-  quantity      INT NOT NULL CHECK (quantity > 0),
-  unit_price    NUMERIC(12,2) NOT NULL CHECK (unit_price >= 0),
-  line_total    NUMERIC(14,2) GENERATED ALWAYS AS (quantity * unit_price) STORED
 );
 
 CREATE TABLE payment (
@@ -81,3 +78,4 @@ CREATE INDEX idx_payment_invoice ON payment(invoice_id);
 -- UC4 Fulfill Order         -> invoice (status transitions), customer
 -- UC5 Process Refund        -> payment (negative amount), invoice
 -- UC6 View Sales Reports    -> invoice, invoice_line, product, country
+
