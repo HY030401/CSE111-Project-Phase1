@@ -12,3 +12,7 @@
   - `docs/relational_schema.png` – Relational schema diagram (PK/FK visualization)
 - **3.SQL Schema**
   - `schema/schema.sql` – PostgreSQL DDL (tables, PK/FK, checks, indexes)
+- **4.phase2_sample_data**
+  -  `schema/phase2_sample_data` - data
+- **5.phase2_queries**
+  -  `schema/phase2_queries` - queries
