@@ -13,6 +13,8 @@
 - **3.SQL Schema**
   - `schema/schema.sql` – PostgreSQL DDL (tables, PK/FK, checks, indexes)
 - **4.phase2_sample_data**
-  -  `schema/phase2_sample_data` - data
+  -  `schema/phase2_sample_data` - Add sample data to the table
 - **5.phase2_queries**
   -  `schema/phase2_queries` - queries
+- **6.app.py**
+  -  `schema/app.py` - Used to display the user/administrator interface and implement the final app functionality.
